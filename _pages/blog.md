@@ -2,7 +2,7 @@
 layout: default
 permalink: /blog/
 title: blog
-nav: true
+nav: false  # 隐藏导航，保留页面代码。若要恢复显示，改为 nav: true
 nav_order: 1
 pagination:
   enabled: true
