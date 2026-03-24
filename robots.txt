@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://clxie0126.github.io/clxie.github.io/sitemap.xml
+Sitemap: https://clxie0126.github.io/sitemap.xml
