@@ -1,0 +1,46 @@
+{% comment %}
+  构建时无需 jekyll-toc 的 {% toc %} 标签：在浏览器中根据正文标题生成目录。
+  若已用 bundle exec 且插件正常，也可改回 {% toc %}。
+{% endcomment %}
+<div id="toc-fallback-root" class="toc toc-fallback" aria-label="Table of contents"></div>
+<script>
+  (function () {
+    function build() {
+      var scope = '{{ include.scope | default: "post" }}';
+      var root = scope === 'distill' ? document.querySelector('d-article') : document.getElementById('markdown-content');
+      var el = document.getElementById('toc-fallback-root');
+      if (!root || !el) return;
+      var hs;
+      if (scope === 'distill') {
+        var dc = root.querySelector('d-contents');
+        hs = Array.prototype.filter.call(root.querySelectorAll('h2, h3'), function (h) {
+          return !dc || !dc.contains(h);
+        });
+      } else {
+        hs = Array.prototype.slice.call(root.querySelectorAll('h2, h3'));
+      }
+      if (!hs.length) {
+        var parent = el.closest('#table-of-contents');
+        if (parent) parent.style.display = 'none';
+        var dc = el.closest('d-contents');
+        if (dc) dc.style.display = 'none';
+        return;
+      }
+      var ul = document.createElement('ul');
+      ul.className = 'mb-0 pl-3';
+      hs.forEach(function (h, i) {
+        if (!h.id) h.id = 'toc-h-' + i;
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent;
+        li.appendChild(a);
+        if (h.tagName === 'H3') li.style.marginLeft = '1rem';
+        ul.appendChild(li);
+      });
+      el.appendChild(ul);
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', build);
+    else build();
+  })();
+</script>
