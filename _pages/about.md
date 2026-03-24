@@ -28,6 +28,4 @@ latest_posts:
 ---
 
 您好，我是谢传龙，目前在北京师范大学珠海校区工作，任副教授、博士生导师。
-我的研究兴趣集中于 **深度学习理论**、**算法公平性** 和 **人工智能应用**。我于2017年在 [香港浸会大学] 获得统计学博士学位，之后在暨南大学经济学院、华为香港研究所从事研究工作。欢迎对我的研究感兴趣的同学、同行与我联系（邮箱：[clxie@bnu.edu.cn]），也欢迎访问我的 [Google Scholar](https://scholar.google.com/citations?user=_fgE3u8AAAAJ&hl=zh-CN) 
-
-
+我的研究兴趣集中于 **深度学习理论**、**算法公平性** 和 **人工智能应用**。我于2017年在 [香港浸会大学] 获得统计学博士学位，之后在暨南大学经济学院、华为香港研究所从事研究工作。欢迎对我的研究感兴趣的同学、同行与我联系（邮箱：[clxie@bnu.edu.cn]），也欢迎访问我的 [Google Scholar](https://scholar.google.com/citations?user=_fgE3u8AAAAJ&hl=zh-CN)
