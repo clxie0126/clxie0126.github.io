@@ -18,7 +18,7 @@ keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your o
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-# 仓库名为 clxie.github.io 时为项目页，站点地址含子路径，须设置 baseurl
+# 用户主页仓库 clxie0126.github.io：站点在域名根路径
 url: https://clxie0126.github.io
 baseurl: ""
 last_updated: false # set to true if you want to display last updated in the footer
