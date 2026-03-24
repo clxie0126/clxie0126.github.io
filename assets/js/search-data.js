@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "团队成员近期做的有趣的工作。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
         },{id: "nav-teaching",
           title: "Teaching",
           description: "",
@@ -33,7 +40,12 @@ ninja.data = [{
         },{id: "news-我的个人学术主页上线啦",
           title: '我的个人学术主页上线啦',
           description: "",
-          section: "News",},{id: "teachings-深度学习",
+          section: "News",},{id: "projects-论文生成工具",
+          title: '论文生成工具',
+          description: "基于北京师范大学毕业论文模板进行论文生成，包括题目选择、数值实验、论文写作等功能",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/academic-homepage/";
+            },},{id: "teachings-深度学习",
           title: '深度学习',
           description: "介绍深度学习的基础知识，包括数学基础、任务类型、模型架构、算法等",
           section: "Teachings",handler: () => {
