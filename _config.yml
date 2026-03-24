@@ -4,7 +4,7 @@
 
 title: 谢传龙的个人学术主页 # the website title (if blank, full name will be used instead)
 first_name: 传龙
-middle_name: 
+middle_name:
 last_name: 谢
 contact_note: >
   clxie@bnu.edu.cn
@@ -92,8 +92,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: blog # blog_name will be displayed in your blog page
+blog_description: # 暂无文章时可为空；有博文后再写简介
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -178,23 +178,16 @@ kramdown:
 include: ["_pages", "_scripts"]
 exclude:
   - bin/
-  - CONTRIBUTING.md
-  - CUSTOMIZE.md
   - Dockerfile
   - docker-compose.yml
   - docker-compose-slim.yml
-  - FAQ.md
   - Gemfile
   - Gemfile.lock
-  - INSTALL.md
   - LICENSE
-  - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_chuanlong.md
   - purgecss.config.js
   - README.md
-  - readme_preview/
   - vendor
 keep_files:
   - CNAME
@@ -271,8 +264,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Xie]
+  first_name: [Chuanlong]
 
   style: apa
   locale: en
